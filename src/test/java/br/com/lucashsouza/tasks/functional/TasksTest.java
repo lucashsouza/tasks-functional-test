@@ -128,7 +128,7 @@ public class TasksTest {
             driver.findElement(By.id("dueDate")).sendKeys("01/01/2030");
             driver.findElement(By.id("saveButton")).click();
             String message = driver.findElement(By.id("message")).getText();
-            Assert.assertEquals("Success", message);
+            Assert.assertEquals("Success!", message);
 
             // Remover tarefa
             driver.findElement(By.xpath("//a[@class='btn btn-outline-danger btn-sm'")).click();
